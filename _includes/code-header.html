@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>{{ site.title }}</title>
+  <meta name="author" content="{{ site.author.name }}">
+
+  <link href="/assets/css/app.css?v={{ site.time | date: '%Y%m%d' }}" rel="stylesheet">
+
+  <script>
+    var _gaq=[['_setAccount','UA-2076729-17'],['_setDomainName', '.conspirator.co'],['_setSiteSpeedSampleRate', 100],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+</head>
+<body class="{{page.body_class}}">

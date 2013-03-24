@@ -1,0 +1,231 @@
+em(desired_font_size, context_font_size=22px)
+  return (desired_font_size / context_font_size) em
+
+@import '_normalize'
+@import '_fonts'
+@import '_ss-social'
+@import '_pygments'
+
+*
+  box-sizing border-box
+
+body
+  background: #f6f6f6
+  color: #444
+  line-height: 1.5
+  font-family: proxima-nova
+  font-size: 22px
+
+h1, h2, h3, h4, h5, h6
+  margin: 0
+  padding: 0
+  line-height: 1
+
+h2, h3, h4, h5, h6
+  font-weight: normal
+  margin-bottom: 10px
+
+h2
+  font-size: em(28px)
+
+p, ul, ol, dl, table, .highlight
+  margin-top: 0
+  margin-bottom: 1em
+
+a
+  color: #3e92cb
+  text-decoration: none
+  transition: color 300ms linear
+  &:hover
+    color: #444
+
+img
+  max-width: 100%
+
+.permalink
+  color: #848484
+  font-size: em(16px)
+  text-align: right
+  a
+    color: #848484
+
+body
+  padding: em(30px) 0
+  > header
+    clearfix()
+    h1
+      float: left
+      a
+        opacity: 1
+        transition: opacity 300ms linear
+        &:hover
+          opacity: .5
+
+    nav
+      float: right
+      font-size: em(18px)
+      line-height: em(54px)
+      text-align: right
+      a
+        color: #444
+        margin-left: em(30px)
+        &:hover
+          color: #3e92cb
+
+.wrap
+  clearfix()
+  margin: 0 auto
+  padding-left: 10px
+  padding-right: 10px
+  max-width: 750px
+
+.main
+  margin: em(30px) 0
+
+  article
+    margin-bottom: em(60px)
+    &:last-child
+      margin-bottom: 0
+    .wrap > h3
+      font-size: em(24px)
+
+    &.image
+      .wrap
+        background: #222
+        padding: em(30px) 10px
+        text-align: center
+        max-width: 100%
+        p
+          margin: 0
+        img
+          box-shadow: 0 0 10px black
+.social
+  clearfix()
+  text-align: center
+  a
+    display: inline-block
+    font-size: em(44px)
+    margin: 0 20px
+    span
+      display: none
+footer
+  color: #848484
+  text-align: center
+  .social
+    margin-top: em(60px)
+    margin-bottom: em(30px)
+
+.page-home
+  background: #393a3b
+  color: #5D6162
+  a
+    color: white
+    &:hover
+      color: #3e92cb
+  h3
+    font-size: em(26px)
+    margin-bottom: em(15px)
+  .wrap
+    max-width: 960px
+    section
+      margin-bottom: em(150px)
+      &.work
+        margin-bottom: em(190px)
+  .intro
+    clearfix()
+    margin: em(50px) auto auto
+    max-width: 870px
+    padding-right: 250px
+    position: relative
+    p
+      font-size: em(24px)
+      margin: 40px 0
+    img
+      margin-top: -94px
+      position: absolute
+      right: 0
+      top: 50%
+
+  .ios
+    text-align: center
+  .hangman-wrap
+    margin: 0 auto
+    position: relative
+    width: 438px
+  .mobile-makers
+    display: block
+    position: absolute
+    right: -150px
+    top: -160px
+    transition: all 500ms ease-in-out
+    transform: rotate(15deg)
+    width: 230px
+    z-index: 1
+  .iphone
+    position: relative
+    z-index: 2
+  .hangman
+    position: absolute
+    top: 156px
+    left: 38px
+    max-width: 371px
+    z-index: 3
+  .mentor
+    text-align: center
+  .social a
+    opacity: .5
+    transition: opacity 300ms linear
+    &:hover
+      opacity: 1
+
+
+
+// iPhone5 Landsape
+@media all and (max-width: 568px)
+  .page-home .intro
+    p
+      margin: 0
+    img
+      margin-top: 0
+      top: 0
+
+// iPhone5 Portrait
+@media all and (max-width: 480px)
+  body > header
+    h1, nav
+      float: none
+      text-align: center
+    h1
+      margin-bottom: em(15px)
+    nav a:first-child
+      margin-left: 0
+  .page-home
+    .intro
+      margin-top: em(15px)
+      padding: 0
+      text-align: center
+      p
+        margin: 0
+        padding: 0
+        text-align: left
+      img
+        position: relative
+        float: none
+        margin-bottom: em(30px)
+        margin-top: 0
+        top: 0
+    .iphone
+      display: none
+    .hangman-wrap
+      margin: 0
+      width: auto
+    .hangman
+      left: auto
+      position: static
+      top: auto
+      max-width: 100%
+    .mobile-makers
+      margin: 0 auto
+      max-width: 75%
+      position: static
+      transform: rotate(0deg)

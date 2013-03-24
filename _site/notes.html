@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Conspirator</title>
+  <meta name="author" content="Christopher Webb">
+
+  <link href="/assets/css/app.css?v=20130323" rel="stylesheet">
+
+  <script>
+    var _gaq=[['_setAccount','UA-2076729-17'],['_setDomainName', '.conspirator.co'],['_setSiteSpeedSampleRate', 100],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+</head>
+<body class="">
+<header>
+  <div class="wrap">
+    <h1><a href="/">
+      
+        <img src="/assets/images/logo-black.svg" alt="" />
+      
+    </a></h1>
+
+    <nav>
+      <a href="/notes.html">Notes</a>
+      <a href="mailto:hello+conspirator@conspirator.co">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="main">
+  
+  <article class="post video">
+    <div class="wrap">
+      
+        <h3><a href="/notes/2013/01/14/macklemore-and-ryan-lewis-at-npr.html">Macklemore & Ryan Lewis Perform at NPR</a></h3>
+        <iframe width="560" height="313" src="http://www.npr.org/templates/event/embeddedVideo.php?storyId=166256822&mediaId=166258738" frameborder="0" scrolling="no"></iframe>
+
+
+        <p class="permalink">
+          <a href="/notes/2013/01/14/macklemore-and-ryan-lewis-at-npr.html">Posted on January 14, 2013</a>
+        </p>
+      
+    </div>
+  </article>
+
+  <article class="post link">
+    <div class="wrap">
+      
+        <h3><a href="/notes/2013/01/11/emmett.html">Emmett</a></h3>
+        <p>I’ve always loved ZenCoding, but when I heard they were changing it and giving it a new name, I was immediately skeptical. How could they make it any better? Emmett is ZenCoding on steroids. Yes, it has a new name, but it is greater in just about every way.</p>
+
+<p>Take for a moment the following line:</p>
+
+<div class="highlight"><pre><code class="text">html&gt;head&gt;title+link+script^body&gt;header&gt;h1&gt;a^^#content&gt;h2^footer
+</code></pre></div>
+
+
+<p>With Emmett installed, all I have to do is hit tab and it expands into this:</p>
+
+<div class="highlight"><pre><code class="html">  <span class="nt">&lt;html&gt;</span>
+    <span class="nt">&lt;head&gt;</span>
+      <span class="nt">&lt;title&gt;&lt;/title&gt;</span>
+      <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;script&gt;&lt;/script&gt;</span>
+    <span class="nt">&lt;/head&gt;</span>
+    <span class="nt">&lt;body&gt;</span>
+      <span class="nt">&lt;header&gt;</span>
+        <span class="nt">&lt;h1&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;&lt;/a&gt;&lt;/h1&gt;</span>
+      <span class="nt">&lt;/header&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;content&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h2&gt;&lt;/h2&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;footer&gt;&lt;/footer&gt;</span>
+    <span class="nt">&lt;/body&gt;</span>
+  <span class="nt">&lt;/html&gt;</span>
+</code></pre></div>
+
+
+<p>Once it’s expanded, I can tab around and it will drop me inside of the <code>&lt;title&gt;</code> tag, tab again and it’ll put me inside of the href attribute for the stylesheet, etc.</p>
+
+<p>Ever been stuck here?</p>
+
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;/images/foo.png&quot;</span> <span class="na">width=</span><span class="s">&quot;???&quot;</span><span class="nt">&gt;</span>
+</code></pre></div>
+
+
+<p>Or maybe even here?</p>
+
+<div class="highlight"><pre><code class="css"><span class="nc">.elementWithBackgroundImage</span> <span class="p">{</span>
+  <span class="k">background</span><span class="o">:</span> <span class="sx">url(/images/foo.png)</span> <span class="k">no-repeat</span><span class="p">;</span>
+  <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+  <span class="k">width</span><span class="o">:</span> <span class="o">???</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+
+<p>We probably all have. So what do we do? We leave the context of our editor, we bounce out to the finder, find the file, and inspect the file to grab the image dimensions. This is not rocket science, but it breaks us from the task at hand and slows us down. Weak sauce.</p>
+
+<p>Emmett helps us out here by offering a simple keyboard shortcut that when envoked, will look up the path/to/image, find it’s dimensions, and complete our tag or CSS for us. Amazing.</p>
+
+<p>Tools like this make writing html fun again.</p>
+
+<p>Emmett can do a bunch of other tasks that simplify front-end development. I urge you to check out the <a href="http://docs.emmet.io">videos</a>, and see what it can do for you.</p>
+
+        <p class="permalink">
+          <a href="/notes/2013/01/11/emmett.html">Posted on January 11, 2013</a>
+        </p>
+      
+    </div>
+  </article>
+
+  <article class="post image">
+    <div class="wrap">
+      
+        <a href="/notes/2012/12/24/groupon-holiday-party.html" title="Groupon Holiday Party"><p><img src="/assets/images/2012-groupon-holiday-party.jpg" alt="Groupon Holiday Party" /></p>
+</a>
+      
+    </div>
+  </article>
+
+  <article class="post link">
+    <div class="wrap">
+      
+        <h3><a href="/notes/2012/12/20/end-of-an-era-build-analyze.html">End of an Era</a></h3>
+        <p><img src="https://gimmebar-assets.s3.amazonaws.com/50d2b4270bd3f.gif" alt="" /></p>
+
+<p>Well, it happened. Marco Arment's <em>Build and Analyze</em>, ended last Friday. It feels odd to already miss it, but I do. The show quickly became a weekly ritual that I looked forward to during my hour-long commute into the city. All good things come to an end though, and I couldn't be happier for Marco and all the things that lie ahead.</p>
+
+        <p class="permalink">
+          <a href="/notes/2012/12/20/end-of-an-era-build-analyze.html">Posted on December 20, 2012</a>
+        </p>
+      
+    </div>
+  </article>
+
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="social">
+      <a href="http://twitter.com/conspirator" class="ss-twitter" title="Twitter"><span>Twitter</span></a>
+<a href="http://github.com/conspirator" class="ss-octocat" title="Github"><span>Github</span></a>
+<a href="http://dribbble.com/conspirator" class="ss-dribbble" title="Dribbble"><span>Dribbble</span></a>
+<a href="http://rdio.com/people/conspirator" class="ss-rdio" title="Rdio"><span>Rdio</span></a>
+<a href="http://svpply.com/conspirator" class="ss-svpply" title="Svpply"><span>Svpply</span></a>
+    </div>
+    2005. Christopher Webb
+  </div>
+</footer>
+</body>
+</html>
