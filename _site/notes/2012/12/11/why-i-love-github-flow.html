@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Conspirator</title>
+  <meta name="author" content="Christopher Webb">
+
+  <link href="/assets/css/app.css?v=20130330" rel="stylesheet">
+
+  <script>
+    var _gaq=[['_setAccount','UA-2076729-17'],['_setDomainName', '.conspirator.co'],['_setSiteSpeedSampleRate', 100],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+</head>
+<body class="">
+<header>
+  <div class="wrap">
+    <h1><a href="/">
+      
+        <img src="/assets/images/logo-black.svg" alt="" />
+      
+    </a></h1>
+
+    <nav>
+      <a href="/notes.html">Notes</a>
+      <a href="mailto:hello+conspirator@conspirator.co">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="main">
+  <article class="post text">
+    <div class="wrap" title="Why I Love GitHub Flow">
+      
+        <h2>Why I Love GitHub Flow</h2>
+        <p>It's funny to think that one article has entirely changed how I want to work moving forward, but Scott Chacon's <a href="http://scottchacon.com/2011/08/31/github-flow.html">GitHub Flow</a> has done just that.</p>
+
+<p>A co-worker, <a href="http://toddjlarsen.com/">Todd Larsen</a>, suggested that our team consider it when we formed earlier this fall. Luckily for us, we made the right decision.</p>
+
+<p>The main precepts are deceptively simple <em>(my steps slightly differ from Scott's, but the idea is the same)</em>:</p>
+
+<ol>
+<li>Our <code>master</code> branch in Git is always deployable.</li>
+<li>Whenever we begin new work, we create a branch (use a very specific name <code>animate-gift-finder-on-init</code> for example) that tracks <code>master</code>.</li>
+<li>We push up this branch to GitHub, and <a href="https://help.github.com/articles/creating-a-pull-request">turn it into a Pull Request</a>.</li>
+<li>We push updates to this branch early and often getting code critiques as we go. (GitHub's interface for this is amazing — we can <a href="https://github.com/blog/785-pull-request-diff-comments">make comments in the code</a>). When it's ready to be merged into <code>master</code>, we simply ask others to give it a final review, and share their thoughts in the comments.</li>
+<li>Once people have reviewed and signed off on the feature, it can be merged into <code>master</code> right through <a href="https://help.github.com/articles/merging-a-pull-request">GitHub's interface</a>.</li>
+</ol>
+
+
+<p>It seems almost obvious; a logical progression of the tools a lot of us use everyday. It has had a profound impact in the way we feel about our work and the way we work together. Here are three benefits I've noticed:</p>
+
+<ol>
+<li><strong>It improved communication.</strong> Because we post code early in the process, the team can literally see how others think through problems. If you like what you see, tell them specifically (ie: "Great use of variables here!"). When you see something that can be improved, share that too (ie: "Let's refactor this section, and make it a module to be used everywhere.").</li>
+<li><strong>It improved communication, part 2.</strong> Despite our development staff living in two different cities with time zone differences, we were never kept out of the loop. This is largely because all of our communication was had out in the open — in the code — via Pull Requests.</li>
+<li><strong>Overall developer happiness.</strong> For the first time in my professional life, I felt like the code my teammates and I were producing was a joint effort, and I was able to see how every line was assembled along the way.</li>
+</ol>
+
+
+<p>I'm sure there are situations where this breaks down or doesn't work for everyone, but it's helped change the way that I think about going to work in the morning. I encourage everyone to look into how it might benefit your workflow.</p>
+
+        <p class="permalink">
+          Posted on December 11, 2012
+        </p>
+      
+    </div>
+  </article>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="social">
+      <a href="http://twitter.com/conspirator" class="ss-twitter" title="Twitter"><span>Twitter</span></a>
+<a href="http://github.com/conspirator" class="ss-octocat" title="Github"><span>Github</span></a>
+<a href="http://dribbble.com/conspirator" class="ss-dribbble" title="Dribbble"><span>Dribbble</span></a>
+<a href="http://rdio.com/people/conspirator" class="ss-rdio" title="Rdio"><span>Rdio</span></a>
+<a href="http://svpply.com/conspirator" class="ss-svpply" title="Svpply"><span>Svpply</span></a>
+    </div>
+    2005. Christopher Webb
+  </div>
+</footer>
+  <script src="/assets/js/app.min.js?v=20130330"></script>
+</body>
+</html>

@@ -47,7 +47,7 @@ module.exports = (grunt) ->
       dist:
         src: [
           "assets/js/vendor/jquery.min.js",
-          "assets/js/vendor/mustache.js",
+          "assets/js/vendor/fitvid.js",
           "assets/js/app.js"
         ]
         dest: "assets/js/app.concat.js"

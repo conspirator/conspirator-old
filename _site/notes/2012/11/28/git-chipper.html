@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Conspirator</title>
+  <meta name="author" content="Christopher Webb">
+
+  <link href="/assets/css/app.css?v=20130330" rel="stylesheet">
+
+  <script>
+    var _gaq=[['_setAccount','UA-2076729-17'],['_setDomainName', '.conspirator.co'],['_setSiteSpeedSampleRate', 100],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+</head>
+<body class="">
+<header>
+  <div class="wrap">
+    <h1><a href="/">
+      
+        <img src="/assets/images/logo-black.svg" alt="" />
+      
+    </a></h1>
+
+    <nav>
+      <a href="/notes.html">Notes</a>
+      <a href="mailto:hello+conspirator@conspirator.co">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="main">
+  <article class="post text">
+    <div class="wrap" title="Git Chipper">
+      
+        <h2>Git Chipper</h2>
+        <p>On Mondays, after downing a large cup of coffee, I try to ease back into the saddle by getting my environment back into proper working order. I'll get my windows organized the way I like them, run database migrations, pull down my repo updates, and invariably I'll find myself deleting 20+ local branches from the previous iteration. Occasionally there's a branch or two that I'll carry into the next week, but more often than not, I just want to blow away everything.</p>
+
+<p>Up until now, I'd clench my jaw, put my head down and type out <code>git branch -D</code> a bunch of times. Don't get me wrong - <strong>this is not difficult</strong>, it's just needlessly repetitive. Inspired by helpful scripts like <a href="/notes/2012/11/26/git-fresh.html">git fresh</a>, I sought a better way to automate the process of branch removal. Now all I have to type is <code>git chipper</code>, a calm washes over me, and I can attack the day focused on shipping code.</p>
+
+<p>All you need to do is place this file somewhere in your PATH, and make it executable. Then you can call it from any git repo. The process might look something like this:</p>
+
+<div class="highlight"><pre><code class="bash">    <span class="nv">$ </span><span class="nb">cd</span> ~/bin/
+    <span class="nv">$ </span>chmod +x git-chipper
+    <span class="nv">$ </span><span class="nb">cd</span> ~/sites/groupon/
+    <span class="nv">$ </span>git chipper
+</code></pre></div>
+
+
+<p><em>If there's a smarter way to do this, please don't hesitate to reach out. I'd love to hear how I can make this better.</em></p>
+
+        <p class="permalink">
+          Posted on November 28, 2012
+        </p>
+      
+    </div>
+  </article>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="social">
+      <a href="http://twitter.com/conspirator" class="ss-twitter" title="Twitter"><span>Twitter</span></a>
+<a href="http://github.com/conspirator" class="ss-octocat" title="Github"><span>Github</span></a>
+<a href="http://dribbble.com/conspirator" class="ss-dribbble" title="Dribbble"><span>Dribbble</span></a>
+<a href="http://rdio.com/people/conspirator" class="ss-rdio" title="Rdio"><span>Rdio</span></a>
+<a href="http://svpply.com/conspirator" class="ss-svpply" title="Svpply"><span>Svpply</span></a>
+    </div>
+    2005. Christopher Webb
+  </div>
+</footer>
+  <script src="/assets/js/app.min.js?v=20130330"></script>
+</body>
+</html>
