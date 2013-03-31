@@ -33,16 +33,27 @@
 </header>
 
 <section class="main">
-  <article class="post link">
-    <div class="wrap" title="End of an Era">
+  <article class="post text">
+    <div class="wrap" title="Git Chipper">
       
-        <h2>End of an Era</h2>
-        <p><img src="https://gimmebar-assets.s3.amazonaws.com/50d2b4270bd3f.gif" alt="" /></p>
+        <h2>Git Chipper</h2>
+        <p>On Mondays, after downing a large cup of coffee, I try to ease back into the saddle by getting my environment back into proper working order. I'll get my windows organized the way I like them, run database migrations, pull down my repo updates, and invariably I'll find myself deleting 20+ local branches from the previous iteration. Occasionally there's a branch or two that I'll carry into the next week, but more often than not, I just want to blow away everything.</p>
 
-<p>Well, it happened. Marco Arment's <em>Build and Analyze</em>, ended last Friday. It feels odd to already miss it, but I do. The show quickly became a weekly ritual that I looked forward to during my hour-long commute into the city. All good things come to an end though, and I couldn't be happier for Marco and all the things that lie ahead.</p>
+<p>Up until now, I'd clench my jaw, put my head down and type out <code>git branch -D</code> a bunch of times. Don't get me wrong - <strong>this is not difficult</strong>, it's just needlessly repetitive. Inspired by helpful scripts like <a href="/notes/2012/11/26/git-fresh.html">git fresh</a>, I sought a better way to automate the process of branch removal. Now all I have to type is <code>git chipper</code>, a calm washes over me, and I can attack the day focused on shipping code.</p>
+
+<p>All you need to do is place this file somewhere in your PATH, and make it executable. Then you can call it from any git repo. The process might look something like this:</p>
+
+<div class="highlight"><pre><code class="bash">    <span class="nv">$ </span><span class="nb">cd</span> ~/bin/
+    <span class="nv">$ </span>chmod +x git-chipper
+    <span class="nv">$ </span><span class="nb">cd</span> ~/sites/groupon/
+    <span class="nv">$ </span>git chipper
+</code></pre></div>
+
+
+<p><em>If there's a smarter way to do this, please don't hesitate to reach out. I'd love to hear how I can make this better.</em></p>
 
         <p class="permalink">
-          Posted on December 20, 2012
+          Posted on November 28, 2012
         </p>
       
     </div>
