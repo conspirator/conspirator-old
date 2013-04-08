@@ -46,6 +46,7 @@ module.exports = (grunt) ->
         separator: "\n"
       dist:
         src: [
+          "assets/js/vendor/retina.js",
           "assets/js/vendor/jquery.min.js",
           "assets/js/vendor/fitvid.js",
           "assets/js/app.js"

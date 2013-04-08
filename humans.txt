@@ -9,5 +9,5 @@
 
 # TECHNOLOGY COLOPHON
     Standards:    HTML5, CSS3
-    Components:   CoffeScript, Stylus, jQuery, Normalize.css
-    Software:     SublimeText, iTerm, GitHub, Jekyll, Grunt
+    Components:   jQuery, Normalize.css, retina.js
+    Software:     SublimeText, iTerm, GitHub, Jekyll, CoffeScript, Stylus, Grunt, GimmeBar
