@@ -5,9 +5,9 @@
     Author:       Christopher Webb <hello@conspirator.co>
     Site:         http://conspirator.co
     Twitter:      http://twitter.com/conspirator
-    Location:     Chicago, IL
+    Location:     Santa Clara, CA
 
 # TECHNOLOGY COLOPHON
     Standards:    HTML5, CSS3
     Components:   jQuery, Normalize.css, retina.js
-    Software:     SublimeText, iTerm, GitHub, Jekyll, CoffeScript, Stylus, Grunt, GimmeBar
+    Software:     Mobile Safari, GitHub
