@@ -1,9 +1,0 @@
-safe: true
-lsi: false
-exclude: [Gemfile, Gemfile.lock, Procfile, config.rb, node_modules, Gruntfile.coffee, .rvmrc, package.json, _config.yml, Makefile]
-markdown: rdiscount
-
-title: Conspirator
-author:
-  name: Christopher Webb
-  email: hello@conspirator.co
